@@ -1,0 +1,21 @@
+<ul class="list-group">
+  <li
+    class="list-group-item list-group-item-info d-flex align-items-center"
+    (click)="addMark()"
+  >
+    <span class="material-symbols-outlined">add</span>
+    <span class="texto">Agregar marcador</span>
+  </li>
+
+  <li
+    class="list-group-item d-flex align-items-center"
+    (click)="goToMark(mark.marker!)"
+    (dblclick)="deleteMarker(indexMark)"
+    *ngFor="let mark of marks; let indexMark = index"
+    [ngStyle]="{ 'background-color': marks[indexMark].color }"
+  >
+    <span class="material-symbols-outlined">location_on</span>
+    <span class="texto">Marcador #{{ indexMark + 1 }}</span>
+  </li>
+</ul>
+<div #map class="mapa-container"></div>

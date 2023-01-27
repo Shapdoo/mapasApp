@@ -1,0 +1,43 @@
+p{
+    margin: 0;
+}
+
+.menu-float {
+  border-radius: 0 1.5rem 1.5rem 0;
+  background: #f5f3f3;
+}
+
+.menu-item {
+  padding: 1.5rem .8rem;
+}
+
+.menu-item p {
+  display: none;
+}
+
+.menu-item span {
+  font-size: 2.5rem;
+}
+
+.menu-active {
+  background-color: #03cea4;
+  border-radius: 0 1.5rem 1.5rem 0;
+  color: white;
+  transition: background ease 70ms;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #03cea4;
+  border-radius: 0 1.5rem 1.5rem 0;
+  color: white;
+  transition: background ease 70ms;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-item p {
+    display: block;
+    font-size: 1.3rem;
+  }
+}

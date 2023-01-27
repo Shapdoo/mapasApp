@@ -1,0 +1,13 @@
+<div class="menu-float">
+  <div class="menu-float-items d-flex flex-column">
+    <div
+      class="menu-item d-flex flex-column align-items-center justify-content-between"
+      *ngFor="let item of menuItems"
+      [routerLink]="item.route"
+      routerLinkActive="menu-active"
+    >
+      <span class="material-symbols-outlined">{{ item.icon }}</span>
+      <p>{{ item.name | titlecase }}</p>
+    </div>
+  </div>
+</div>
